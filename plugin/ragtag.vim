@@ -29,6 +29,7 @@ augroup ragtag
   autocmd FileType php,asp*,cf,mason,eruby,liquid,jst,eelixir     call s:Init()
   autocmd FileType xml,xslt,xsd,docbk                             call s:Init()
   autocmd FileType vue                                            call s:Init()
+  autocmd FileType jinja,njk                                      call s:Init()
   autocmd FileType javascript.jsx,jsx,javascriptreact,handlebars  call s:Init()
   autocmd FileType typescript.tsx,tsx,typescriptreact             call s:Init()
   autocmd InsertLeave * call s:Leave()
@@ -106,7 +107,7 @@ function! s:Init()
     inoremap <buffer> <C-X>>    }}
     let b:surround_45 = "{{ \r }}"
     let b:surround_61 = "{{ \r }}"
-  elseif s:isFiletype('django') || s:isFiletype('htmldjango') || s:isFiletype('liquid') || s:isFiletype('htmljinja')
+  elseif s:isFiletype('django') || s:isFiletype('htmldjango') || s:isFiletype('liquid') || s:isFiletype('htmljinja') || s:isFiletype('jinja')
     inoremap <buffer> <SID>ragtagOopen    {{<Space>
     inoremap <buffer> <SID>ragtagOclose   <Space>}}<Left><Left>
     inoremap <buffer> <C-X><Lt> {%

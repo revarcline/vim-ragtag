@@ -4,6 +4,8 @@ A set of mappings for HTML, XML, PHP, ASP, eRuby, JSP, and more (formerly allml)
 
 This plugin started out as a set of personal mappings, but there was enough enjoyment among those I shared it with for me to clean it up and release it. 
 
+This fork includes small tweaks for jinja filetypes (recommend use of [lepture/vim-jinja](https://github.com/lepture/vim-jinja))
+
 ## Features
 
 A huge variety of filetypes are supported:  html, xhtml, wml, xml, xslt, xsd, jsp, php, aspperl, aspvbs, cf, mason, htmldjango, and eruby.  (Let me know if I missed any).  Some features take note of the filetype and adapt to it.
